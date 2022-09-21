@@ -4,50 +4,47 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+<title>Agendamento</title>
 <link rel="stylesheet" href="agendamento.css">
 </head>
 <body>
 <section class="area-agendamento">
-<div class="agendamento">
-<div>
-<img src="/assets/fotos/pngwing.com.png" alt="">
-</div>
-<form>
-
-<input type="text" name="nome" placeholder="Nome" autofocus>
-<div class="sexo">
-    <label >Sexo</label> 
+    <div>
+        <div class="agendamento">
+            <div>
+                <img src="../assets/fotos/pngwing.com.png" alt="">
+            </div>
+        <form>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" placeholder="Nome" autofocus>
+            <div class="sexo">
+                <label >Sexo</label> 
+                
+                <input type="radio" name="sexo" value="Masculino">
+                <label>Masculino</label>
+                
+                <input type="radio" name="sexo" value="Feminino">
+                <label>Feminino</label>
+            </div>
+            <div class="trabalho">
+                <label for="Trabalho Desejado"></label> 
+                <select name="Trabalho desejado" style="width: 200px;">
+                    <option value="selecione">Selecione</option>
+                    <option value="Progressiva">Terapia Capilar</option>
+                    <option value="tintura">Tratamento</option>
+                    <option value="corte">Cortes</option>
+                </select>
+            </div>
     
-    <input type="radio" name="sexo" value="Masculino">
-    <label>Masculino</label>
+            <label class="data">Selecione a data</label>
+            <input type="date" name="data">
+            <label >Selecione o horario</label>
+            <input type="time" name="horario">
     
-    <input type="radio" name="sexo" value="Feminino">
-    <label>Feminino</label>
-</div>
-<div class="trabalho">
-    <label for="Trabalho Desejado"></label> 
-    <select name="Trabalho desejado" style="width: 200px;">
-        <option value="selecione">Selecione</option>
-        <option value="Progressiva">Progressiva</option>
-        <option value="tintura">Tintura</option>
-        <option value="corte">Corte</option>
-        <option value="corte com escova">Corte com escova</option>
+            <input type="submit" value="Agendar Horario">
     
-    
-    </select>
-
-</div>
-
-<label class="data">Selecione a data</label>
-<input type="date" name="data">
-<label >Selecione o horario</label>
-<input type="time" name="horario">
-
-<input type="submit" value="Agendar Horario">
-
-</form>
-
+        </form>
+    </div>
 </div>
 </section>
 </body>
