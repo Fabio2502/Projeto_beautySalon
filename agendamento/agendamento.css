@@ -4,19 +4,32 @@ body {
     overflow: hidden;
 }
 
-input{
-    background-color: gray;
+.area-agendamento{
+    text-align: -webkit-center;
 }
 
-.area-agendamento div{
-    width: 50%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+.area-agendamento>div{
+    max-width: 60%;
+    padding: 1rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075);
 }
 
-.agendamento div img{
+.agendamento>div>img{
     height: 7rem;
+}
+
+form{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input{
+    background-color: white;
+    border-color: transparent;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075);
 }
