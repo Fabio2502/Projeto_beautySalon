@@ -1,0 +1,155 @@
+:root {
+    --header-height: 4.5rem;
+  
+    /* colors */
+    --hue: 159;
+    /* HSL color mode */
+    --base-color: hsl(var(--hue) 36% 57%);
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: rgb(255, 255, 255);
+  
+    /* fonts */
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
+  
+    --title-font: 'Poppins', sans-serif;
+    --body-font: 'DM Sans', sans-serif;
+  }
+  
+  
+  nav{
+    background-color: var(--base-color);
+    height: 150px;
+  }
+  .logo {
+    font: 700 3rem var(--title-font);
+    color: black !important;
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    
+    
+  }
+  
+  
+  
+  
+    .area-login {
+    display: flex;
+    justify-content: center;
+    
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    
+  
+    
+    }
+    
+    .login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--base-color);
+     width: 355px;
+    height: 410px;
+    padding: 35px;
+    border-radius: 10px;
+    
+    }
+    .sexo-princ {
+        padding-right: 60px;
+    }
+    .sexo{
+        font-size: 20px;
+        margin-top: 10px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-right: 40px;
+    }
+    
+    .login form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    }
+    
+    .login input {
+    color: #cbd0f7;
+    
+    background-color: #252a34;
+    border: none;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    padding-left: 10px;
+    
+    }
+    
+   .trabalho {
+    border-radius: 10px;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+    padding-left: 10px;
+
+   }
+    
+    input::placeholder{
+    color: #cbd0f7;
+    font-size: 14px;
+    }
+    
+    form [type=submit] {
+    display: block;
+    background-color: #000000 ;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    
+    form [type=submit]:hover{
+    background-color: rgb(35, 46, 53);
+    }
+    
+    p{
+    color: #2a2a2c;
+    }
+    
+    a{
+    color: #0c0c0c ;
+    text-decoration: none;
+    margin-left: 10px;
+    }
+  
+    a:hover{
+        color: rgb(35, 46 , 53);
+    }
+  
+    .title {
+        padding-left: 40px;
+    }
+  
+  .container {
+  
+    background-color: var(--base-color);
+    height: 150px;
+  }
+    .contato {
+        display: flex;
+        justify-content: center;
+        color: black;
+        
+        font: 700 1.20rem var(--title-font);
+        padding-top: 60px;
+    }
+  
+    *{
+        overflow: hidden;
+    }
