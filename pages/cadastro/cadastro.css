@@ -62,12 +62,7 @@ nav{
   
   }
   
-  .login form {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  }
-  
+
   .login input {
   color: #cbd0f7;
   margin-top:20px;
@@ -77,6 +72,9 @@ nav{
   outline: none;
   border-radius: 8px;
   padding-left: 10px;
+  display: flex;
+  width: 100%;
+
   
   }
   
