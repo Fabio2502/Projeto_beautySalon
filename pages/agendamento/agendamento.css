@@ -72,8 +72,9 @@ section{
 section>div{
   height: 100%;
   width: 100%;
-  padding-left: 38vw;
-  padding-top: 19vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form{
@@ -85,6 +86,7 @@ form{
   background-color: var(--base-color);
   border-radius: 10px;
   box-shadow: 0px 0px 10px lightgray;
+  flex-basis: 50%;
 }
 
 form>div{
