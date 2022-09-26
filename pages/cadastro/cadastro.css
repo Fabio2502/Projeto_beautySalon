@@ -26,7 +26,7 @@ nav{
   height: 150px;
 }
 .logo {
-  font: 700 3rem var(--title-font);
+  font: 35px var(--title-font);
   color: black !important;
   display: flex;
   padding-top: 40px;
@@ -132,7 +132,7 @@ nav{
       justify-content: center;
       color: black;
       
-      font: 700 1.20rem var(--title-font);
+      font:  20px var(--title-font);
       padding-top: 60px;
   }
 

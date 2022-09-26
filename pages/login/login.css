@@ -27,18 +27,15 @@
     height: 150px;
  }
   .logo {
-    font: 700 3rem var(--title-font);
+    font:  35px var(--title-font);
     color: black !important;
     display: flex;
-    padding-top: 40px;
+    padding-top: 45px;
     justify-content: center;
     
     
   }
   
-
- 
-
     .area-login {
     display: flex;
     justify-content: center;
@@ -117,6 +114,7 @@
     text-decoration: none;
     margin-left: 10px;
     
+    
     }
 
     a:hover{
@@ -135,10 +133,11 @@
     .contato {
         display: flex;
         justify-content: center;
+        align-items: center;
         color: black;
-        
-        font: 700 1.20rem var(--title-font);
+        font:  20px var(--title-font);
         padding-top: 60px;
+
     }
 
     *{
