@@ -54,7 +54,7 @@ body {
 }
 
 .form-image img {
-    width: 31rem;
+    width: 20rem;
 }
 
 .form {
@@ -99,7 +99,7 @@ body {
 .form-header h1::after {
     content: '';
     display: block;
-    width: 5rem;
+    width: 12rem;
     height: 0.3rem;
     background-color:var(--base-color);
     margin: 0 auto;
@@ -138,7 +138,7 @@ body {
 }
 
 .input-box label,
-.gender-title h6 {
+.trabalho-title h6 {
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
@@ -148,29 +148,29 @@ body {
     color: #000000be;
 }
 
-.gender-group {
+.trabalho-group {
     display: flex;
     justify-content: space-between;
     margin-top: 0.62rem;
     padding: 0 .5rem;
 }
 
-.gender-input {
+.trabalho-input {
     display: flex;
     align-items: center;
 }
 
-.gender-input input {
+.trabalho-input input {
     margin-right: 0.35rem;
 }
 
-.gender-input label {
+.trabalho-input label {
     font-size: 0.81rem;
     font-weight: 600;
     color: #000000c0;
 }
 
-.continue-button button {
+.agendar-button button {
     width: 100%;
     margin-top: 2.5rem;
     border: none;
@@ -180,11 +180,11 @@ body {
     cursor: pointer;
 }
 
-.continue-button button:hover {
+.agendar-button button:hover {
     background-color: var(--base-color-alt);
 }
 
-.continue-button button a {
+.agendar-button button a {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
