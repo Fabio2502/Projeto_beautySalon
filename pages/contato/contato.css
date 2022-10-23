@@ -140,7 +140,7 @@ body{
   transition: all 0.3s ease;
 }
 .button input[type="button"]:hover{
-  background: #C1AC9C;
+  background:var(--base-color);
 }
 
 

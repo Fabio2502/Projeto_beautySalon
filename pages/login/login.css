@@ -54,7 +54,7 @@ body {
 }
 
 .form-image img {
-    width: 31rem;
+    width: 28rem;
 }
 
 .form {
@@ -79,6 +79,7 @@ body {
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 .voltar-button button:hover {
@@ -164,33 +165,26 @@ body {
     cursor: pointer;
 }
 
+.login-button:hover {
 
-
-
-
-.continue-button button:hover {
     background-color: var(--base-color-alt);
 }
 
-.continue-button button a {
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
-    color: #fff;
-}
+
+
+
+
 
 .cadastro1 {
     margin-top: 20px;
-    
-    
-
-    font-size: 10px;
+    font-size: 9px;
 
 }
 
 a{
     text-decoration: none;
     color: var(--base-color-alt);
+    font-size: 18px;
 }
 
 a:hover {
