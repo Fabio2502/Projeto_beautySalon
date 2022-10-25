@@ -178,19 +178,30 @@ body {
 .cadastro1 {
     margin-top: 20px;
     font-size: 9px;
+    display: flex;
 
 }
 
-a{
+.cadastro{
     text-decoration: none;
     color: var(--base-color-alt);
     font-size: 18px;
 }
 
-a:hover {
+.cadastro:hover {
 
     color: var(--base-color-alt);
 }
+
+.redifinir {
+    padding-left: 65px;
+    text-decoration: none;
+    color: var(--base-color-alt);
+    font-size: 17px;    
+}
+
+.redifinir:hover { 
+    color: var(base-color);}
 
 
 
