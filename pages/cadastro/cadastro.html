@@ -45,15 +45,17 @@
                         <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" >
                     </div>
 
+                    
+
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" >
+                        <input id="password" type="password" name="password" required onchange='confereSenha()' placeholder="Digite sua senha" >
                     </div>
 
 
                     <div class="input-box">
                         <label for="confirmPassword">Confirme sua Senha</label>
-                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" >
+                        <input id="confirmPassword" type="password" name="confirmPassword" required onchange='confereSenha()' placeholder="Digite sua senha novamente" >
                     </div>
 
                 </div>
@@ -92,6 +94,7 @@
             </form>
         </div>
     </div>
+    <script src="/pages/cadastro/cadastro.js"></script>
 </body>
 
 </html>
