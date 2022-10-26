@@ -156,7 +156,7 @@ p {
     outline: 1px solid #6c63ff;
 }
 
-.busca-button {
+.busca{
 
     width: 50vh;
     border: none;
@@ -168,7 +168,7 @@ p {
     cursor: pointer;
 }
 
-.busca-button:hover {
+.busca:hover {
 
     background-color: var(--base-color-alt);
 }

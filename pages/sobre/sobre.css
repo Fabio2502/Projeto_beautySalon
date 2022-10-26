@@ -91,7 +91,7 @@
     padding-left: 10px;
     font-size: 18px;
   
-    margin: 15px;
+    margin: 25px;
   }
 
   .margin{
@@ -117,3 +117,31 @@
     border: 2px solid var(--base-color-alt);
     cursor: pointer;
   }
+  
+  @media screen and (max-width: 1064px) {
+    .main {
+        width: 90%;
+        height: auto;
+    }
+
+    .about img{
+      height: auto;
+      width: 80vh;
+      margin-bottom: 30px;
+      
+     
+
+    }
+    .main{
+        flex-direction: column;
+        padding-left: 80px;
+        z-index: 5;
+        padding-right: 5rem;
+       
+        overflow: hidden;
+        flex-wrap: nowrap;
+    }
+   
+    
+  
+}

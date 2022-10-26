@@ -98,6 +98,7 @@ body {
     background-color: var(--base-color);
     padding: 0.4rem 1rem;
     border-radius: 5px;
+    width: 50vh;
     cursor: pointer;
 }
 
@@ -145,41 +146,6 @@ body {
 }
 
 
-
-
-
-.redefinir-button {
-
-    width: 50vh;
-    border: none;
-    background-color: var(--base-color);
-   display: flex;  
-   align-items: center;
-   justify-content: center;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.redefinir-button:hover {
-
-    background-color: var(--base-color-alt);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1330px) {
     .form-image {
         display: none;
@@ -201,20 +167,9 @@ body {
         flex-direction: column;
         z-index: 5;
         padding-right: 5rem;
-        max-height: 10rem;
-        overflow-y: scroll;
+        max-height: 16rem;
+        overflow-y: hidden;
         flex-wrap: nowrap;
     }
-    .gender-inputs {
-        margin-top: 2rem;
-    }
-    .gender-group {
-        flex-direction: column;
-    }
-    .gender-title h6 {
-        margin: 0;
-    }
-    .gender-input {
-        margin-top: 0.5rem;
-    }
+   
 }
