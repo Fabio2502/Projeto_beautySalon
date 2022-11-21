@@ -1,0 +1,147 @@
+/*====  RESET ============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'josefin sans' , sans-serif;
+    
+  }
+  
+  
+  /*====  VARIABLES ============================ */
+  :root {
+    --header-height: 4.5rem;
+  
+    /* colors */
+    --hue: 159;
+    /* HSL color mode */
+    --base-color: hsl(var(--hue) 36% 57%);
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: rgb(255, 255, 255);
+  
+    /* fonts */
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
+  
+    --title-font: 'Poppins', sans-serif;
+    --body-font: 'DM Sans', sans-serif;
+  }
+  
+  .about {
+    width: 100%;
+    padding: 78px 0px;
+    
+  }
+
+  .about img {
+    height: auto;
+    width: 1000px;
+    padding-right: 100px;
+  }
+
+  .about-text {
+    
+    background-color: var(--base-color-second);
+    border-radius: 40px;
+  }
+
+  .main {
+    width: 1150px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .about-text h1 {
+    color: black;
+    font-size: 80px;
+    text-transform: capitalize;
+    display: flex;
+    
+   
+    margin-bottom: 20px;
+    margin: 40px;
+  }
+
+  span {
+    color: var(--base-color-alt);
+  }
+ 
+  .about-text h5 {
+    color: black;
+    display: flex;
+    font-size: 40px;
+    padding-left: 150px;
+    text-transform: capitalize;
+ 
+    letter-spacing: 2px;
+    margin: 30px;
+  }
+
+  .about-text p {
+    
+    letter-spacing: 1px;
+    line-height: 28px;
+    padding-left: 10px;
+    font-size: 18px;
+  
+    margin: 25px;
+  }
+
+  .margin{
+    margin: 2vw;
+  }
+
+  a {
+    background-color: var(--base-color-alt);
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    margin-left: 220px;
+    
+  }
+  
+
+  a:hover{
+    background: transparent;
+    border: 2px solid var(--base-color-alt);
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 1064px) {
+    .main {
+        width: 90%;
+        height: auto;
+    }
+
+    .about img{
+      height: auto;
+      width: 80vh;
+      margin-bottom: 30px;
+      
+     
+
+    }
+    .main{
+        flex-direction: column;
+        padding-left: 80px;
+        z-index: 5;
+        padding-right: 5rem;
+       
+        overflow: hidden;
+        flex-wrap: nowrap;
+    }
+   
+    
+  
+}
