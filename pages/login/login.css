@@ -101,6 +101,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     width: 50vh;
+    
 }
 
 .login-button button:hover {
@@ -182,9 +183,10 @@ body {
 .reset:hover { 
     color: var(base-color);}
 
-
-
-
+.d-none{
+    display: none;
+   
+}
 
 
 

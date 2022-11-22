@@ -12,7 +12,7 @@
     <div>
         <h1>Beauty <span>Salon</span></h1>
         <h2>Meus Horarios</h2>
-        <button><a href="/pages/user/user.html">Voltar</a></button>
+        <button><a href="/pages/user/user.php">Voltar</a></button>
     </div>
 
         <table border="1">

@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="login-button">
-                        <button><a href="/pages/principal/index.html">Voltar</a></button>
+                        <button><a href="/pages/principal/index.php">Voltar</a></button>
                     </div>
                    
                 </div>

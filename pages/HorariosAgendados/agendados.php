@@ -12,7 +12,7 @@
     <div>
         <h1>Beauty <span>Salon</span></h1>
         <h2>Horarios agendados</h2>
-        <button><a href="/pages/Adm/adm.html">Voltar</a></button>
+        <button><a href="/pages/Adm/adm.php">Voltar</a></button>
     </div>
 
         <table border="1">

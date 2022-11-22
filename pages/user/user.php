@@ -16,7 +16,7 @@
     />
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="/pages/Adm/adm.css" />
+    <link rel="stylesheet" href="/pages/user/user.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -49,9 +49,14 @@
         
       </nav>
 
-      <a class="button-agendados" href="/pages/HorariosAgendados/agendados.html"> <B>Horarios Agendados</B></a>
-      <a class="button-pessoas" href="/pages/Usuarios Cadastrados/Usuarios.html"> <B>Usuarios Cadastrados</B></a>
-        
+      <div class="user">
+        <img class="user-img" src="/assets/fotos/usuarios/10.jpeg" alt="">
+        <a class="button-horarios" href="/pages/meus horarios/userHorario.php"> <B>Meus Horarios</B></a>
+        <h5>Olá, Amanda</h5>
+
+      </div>
+
+       
      
 
     </header>
@@ -72,7 +77,7 @@
               Um salão exclusivo em Rio Claro-SP, especializado em tratamentos
               naturais.
             </p>
-            
+            <a class="button" href="/pages/AgendarHorarios/agendamentos.html">Agendar um horário</a>
           </div>
         </div>
       </section>
@@ -110,7 +115,7 @@
               quaerat quis necessitatibus at odit, dolores dicta, officia ab
               quos. Provident, quae.
             </p>
-            <a href="/pages/sobre/sobre.html">learn More</a>
+            <a href="/pages/sobre/sobre.html" target="blank">learn More</a>
           </div>
         </div>
       </section>
@@ -243,8 +248,12 @@
               Entre em contato com a Beautysalon, queremos tirar suas dúvidas,
               ouvir suas críticas e sugestões.
             </p>
-           
-            
+            <a
+              href="/pages/contato/contato.html"
+              class="button"
+              target="_blank"
+              ><i class="icon-whatsapp"></i> Entrar em contato</a
+            >
           </div>
 
           <div class="links">
@@ -266,10 +275,7 @@
           <a class="logo logo-alt" href="#home">beauty<span>salon</span>.</a>
           <p>©2021 Beautysalon.</p>
           <p>Todos os direitos reservados.</p>
-        </div>
-
      
-      </div>
     </footer>
 
     <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
@@ -281,6 +287,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- main.js -->
-    <script src="/pages/Adm/adm.js"></script>
+    <script src="/pages/user/user.js"></script>
   </body>
 </html>

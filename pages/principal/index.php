@@ -16,7 +16,7 @@
     />
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="/pages/user/user.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -49,14 +49,8 @@
         
       </nav>
 
-      <div class="user">
-        <img class="user-img" src="/assets/fotos/usuarios/10.jpeg" alt="">
-        <a class="button-horarios" href="/pages/meus horarios/userHorario.html"> <B>Meus Horarios</B></a>
-        <h5>Olá, Amanda</h5>
-
-      </div>
-
-       
+      <a class="button-login" href="/pages/login/login.php"> <B>Login</B></a>
+        <a class="register" href="/pages/cadastro/cadastro.php"> <B>Register </B></a>
      
 
     </header>
@@ -77,7 +71,7 @@
               Um salão exclusivo em Rio Claro-SP, especializado em tratamentos
               naturais.
             </p>
-            <a class="button" href="/pages/AgendarHorarios/agendamentos.html">Agendar um horário</a>
+            <a class="button" href="/pages/AgendarHorarios/agendamentos.php">Agendar um horário</a>
           </div>
         </div>
       </section>
@@ -115,7 +109,7 @@
               quaerat quis necessitatibus at odit, dolores dicta, officia ab
               quos. Provident, quae.
             </p>
-            <a href="/pages/sobre/sobre.html">learn More</a>
+            <a href="/pages/sobre/sobre.php">learn More</a>
           </div>
         </div>
       </section>
@@ -249,7 +243,7 @@
               ouvir suas críticas e sugestões.
             </p>
             <a
-              href="/pages/contato/contato.html"
+              href="/pages/contato/contato.php"
               class="button"
               target="_blank"
               ><i class="icon-whatsapp"></i> Entrar em contato</a
@@ -287,6 +281,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- main.js -->
-    <script src="/pages/user/user.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -155,7 +155,7 @@ body {
   color: var(--body-color);
 }
 
-/*====  LOGIN  ============================ */
+/*====  AGENDADOS  ============================ */
 
 .button-agendados {
   height: 2.125rem;
@@ -168,7 +168,7 @@ body {
   height: 50px;
   width: 200px;
   position: absolute; 
-	right: 50px; 
+	right: 0px; 
   top: 15px; 
 
   border-radius: 5px;

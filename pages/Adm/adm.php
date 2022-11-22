@@ -16,7 +16,7 @@
     />
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/pages/Adm/adm.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -49,8 +49,9 @@
         
       </nav>
 
-      <a class="button-login" href="/pages/login/login.html"> <B>Login</B></a>
-        <a class="register" href="/pages/cadastro/cadastro.html"> <B>Register </B></a>
+      <a class="button-agendados" href="/pages/HorariosAgendados/agendados.php"> <B>Horarios Agendados</B></a>
+      <a class="button-pessoas" href="/pages/Usuarios Cadastrados/Usuarios.php"> <B>Usuarios Cadastrados</B></a>
+        
      
 
     </header>
@@ -71,7 +72,7 @@
               Um salão exclusivo em Rio Claro-SP, especializado em tratamentos
               naturais.
             </p>
-            <a class="button" href="/pages/AgendarHorarios/agendamentos.html">Agendar um horário</a>
+            
           </div>
         </div>
       </section>
@@ -109,7 +110,7 @@
               quaerat quis necessitatibus at odit, dolores dicta, officia ab
               quos. Provident, quae.
             </p>
-            <a href="/pages/sobre/sobre.html">learn More</a>
+          
           </div>
         </div>
       </section>
@@ -242,12 +243,8 @@
               Entre em contato com a Beautysalon, queremos tirar suas dúvidas,
               ouvir suas críticas e sugestões.
             </p>
-            <a
-              href="/pages/contato/contato.html"
-              class="button"
-              target="_blank"
-              ><i class="icon-whatsapp"></i> Entrar em contato</a
-            >
+           
+            
           </div>
 
           <div class="links">
@@ -269,7 +266,10 @@
           <a class="logo logo-alt" href="#home">beauty<span>salon</span>.</a>
           <p>©2021 Beautysalon.</p>
           <p>Todos os direitos reservados.</p>
+        </div>
+
      
+      </div>
     </footer>
 
     <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
@@ -281,6 +281,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- main.js -->
-    <script src="main.js"></script>
+    <script src="/pages/Adm/adm.js"></script>
   </body>
 </html>

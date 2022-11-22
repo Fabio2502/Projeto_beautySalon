@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="voltar-button">
-                        <button><a href="/pages/principal/index.html">cancelar</a></button>
+                        <button><a href="/pages/principal/index.php">cancelar</a></button>
                     </div>
                    
                 </div>
