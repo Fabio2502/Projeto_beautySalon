@@ -1,6 +1,6 @@
 <?php
 $hostname="localhost";
-$bancodedados = "login";
+$bancodedados = "cadastro";
 $usuario = "root";
 $senha = "123456";
 

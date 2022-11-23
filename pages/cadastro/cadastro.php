@@ -1,3 +1,31 @@
+<?php
+
+
+if (isset($_POST['submit'])) {
+
+    // print_r($_POST['primeiro_nome']);
+    // print_r($_POST['segundo_nome']);
+    // print_r($_POST['email']);
+    // print_r($_POST['celular']);
+    // print_r($_POST['senha']);
+    // print_r($_POST['genero']);  
+     
+    include_once('config.php');
+
+    $email = $_POST['email'];
+    $senha =   $_POST['senha'];
+    $primeiro_nome = $_POST['primeiro_nome'];
+    $segundo_nome = $_POST['segundo_nome'];
+    $celular = $_POST['celular'];
+    $genero = $_POST['genero'];
+
+    $sql = "INSERT INTO usuarios VALUES ('" . $email . "','" . $senha . "','" . $primeiro_nome . "','" . $segundo_nome . "','" . $celular .  "','" . $genero . "')";     
+    $conexao->query($sql);
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,7 +43,7 @@
             <img src="/assets/fotos/undraw_shopping_re_3wst.svg" alt="">
         </div>
         <div class="form">
-            <form action="#">
+            <form action="cadastro.php" method="POST">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre-se</h1>
@@ -28,12 +56,12 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" required name="firstname" placeholder="Digite seu primeiro nome" >
+                        <input id="firstname" type="text" required name="primeiro_nome" placeholder="Digite seu primeiro nome" >
                     </div>
 
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" required placeholder="Digite seu sobrenome" >
+                        <input id="lastname" type="text" name="segundo_nome" required placeholder="Digite seu sobrenome" >
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
@@ -42,22 +70,18 @@
 
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" required placeholder="(xx) xxxx-xxxx" >
+                        <input id="number" type="tel" name="celular" required placeholder="(xx) xxxx-xxxx" >
                     </div>
 
                     
 
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" required placeholder="Digite sua senha" >
+                        <input id="password" type="password" name="senha" required placeholder="Digite sua senha" >
                     </div>
 
 
-                    <div class="input-box">
-                        <label for="confirmPassword">Confirme sua Senha</label>
-                        <input id="confirmPassword" type="password" name="confirmPassword" required placeholder="Digite sua senha novamente" >
-                    </div>
-
+                  
                 </div>
 
                 <div class="gender-inputs">
@@ -67,29 +91,29 @@
 
                     <div class="gender-group">
                         <div class="gender-input">
-                            <input id="female" type="radio" name="gender">
+                            <input id="female" type="radio" name="genero">
                             <label for="female">Feminino</label>
                         </div>
 
                         <div class="gender-input">
-                            <input id="male" type="radio" name="gender">
+                            <input id="male" type="radio" name="genero">
                             <label for="male">Masculino</label>
                         </div>
 
                         <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
+                            <input id="others" type="radio" name="genero">
                             <label for="others">Outros</label>
                         </div>
 
                         <div class="gender-input">
-                            <input id="none" type="radio" name="gender">
+                            <input id="none" type="radio" name="genero">
                             <label for="none">Prefiro não dizer</label>
                         </div>
                     </div>
                 </div>
 
                 <div class="continue-button">
-                    <button><a href="#">Continuar</a> </button>
+                    <button type="submit" name="submit" id="submit"><a>Continuar</a> </button>
                 </div>
             </form>
         </div>
