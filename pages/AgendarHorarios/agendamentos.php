@@ -1,3 +1,36 @@
+<?php
+
+
+if (isset($_POST['submit'])) {
+
+  
+     
+    include_once('configuration.php');
+
+    $primeiro_nome = $_POST['primeiro_nome'];
+    $segundo_nome =   $_POST['segundo_nome'];
+    $email = $_POST['email'];
+    $celular = $_POST['celular'];
+    $horario = $_POST['horario'];
+    $data = $_POST['data'];
+    $trabalho = $_POST['trabalho'];
+    $date = DateTimeImmutable::createFromFormat('Y-m-d', $data);
+  
+   
+  
+
+    $sql = "INSERT INTO agendamentos VALUES ('" . $primeiro_nome . "','" . $segundo_nome . "','" . $email . "','" . $celular . "','" . $horario .  "','" . $date->format('Y-m-d') . "','" . $trabalho . "')";     
+    $conexao->query($sql);
+    
+  
+    
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,7 +48,7 @@
             <img src="/assets/fotos/agendamento.png" alt="">
         </div>
         <div class="form">
-            <form action="#">
+            <form action="agendamentos.php" method="POST">
                 <div class="form-header">
                     <div class="title">
                         <h1>Agende Seu Horario</h1>
@@ -30,12 +63,12 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" required placeholder="Digite seu primeiro nome" >
+                        <input id="firstname" type="text" name="primeiro_nome" required placeholder="Digite seu primeiro nome" >
                     </div>
 
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" required placeholder="Digite seu sobrenome" >
+                        <input id="lastname" type="text" name="segundo_nome" required placeholder="Digite seu sobrenome" >
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
@@ -44,18 +77,18 @@
 
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" required placeholder="(xx) xxxx-xxxx" >
+                        <input id="number" type="tel" name="celular" required placeholder="(xx) xxxx-xxxx" >
                     </div>
 
                     <div class="input-box">
                         <label for="password">Horario</label>
-                        <input id="password" type="time" required name="horario"  >
+                        <input id="password" type="time" name="horario" required name="horario"  >
                     </div>
 
 
                     <div class="input-box">
-                        <label for="confirmPassword">Data</label>
-                        <input id="confirmDate" type="date" required name="confirmDate" >
+                        <label >Data</label>
+                        <input id="confirmDate" type="date" name="data" required name="confirmDate" >
                     </div>
 
                 </div>
@@ -67,29 +100,29 @@
 
                     <div class="trabalho-group">
                         <div class="trabalho-input">
-                            <input id="female" type="radio" name="trabalho">
+                            <input  type="radio" name="trabalho">
                             <label for="female">Terapia Capilar</label>
                         </div>
 
                         <div class="trabalho-input">
-                            <input id="male" type="radio" name="trabalho">
+                            <input  type="radio" name="trabalho">
                             <label for="male">Cortes</label>
                         </div>
 
                         <div class="trabalho-input">
-                            <input id="others" type="radio" name="trabalho">
+                            <input i type="radio" name="trabalho">
                             <label for="others">Tratamentos</label>
                         </div>
 
                         <div class="trabalho-input">
-                            <input id="none" type="radio" name="trabalho">
+                            <input  type="radio" name="trabalho">
                             <label for="none">Tintura</label>
                         </div>
                     </div>
                 </div>
 
                 <div class="agendar-button">
-                    <button><a href="#">Agendar Horario</a> </button>
+                <button type="submit" name="submit" id="submit"><a>Agendar Horario</a> </button>
                 </div>
             </form>
         </div>
